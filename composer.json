@@ -4,5 +4,12 @@
     "type": "drupal-module",
     "homepage": "https://github.com/localgovdrupal/localgov_paragraphs",
     "license": "GPL-2.0-or-later",
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/address": "^1.4",
+        "drupal/field_group": "^1.0",
+        "drupal/geolocation": "^3.0",
+        "drupal/office_hours": "^1.2",
+        "drupal/paragraphs": "^1.3"
+    }
 }

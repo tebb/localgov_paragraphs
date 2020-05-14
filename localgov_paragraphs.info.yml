@@ -3,3 +3,17 @@ description: Provides core paragraph components for the LocalGovDrupal distribut
 package: LocalGovDrupal
 type: module
 core_version_requirement: ^8.8 || ^9
+
+dependencies:
+  - address:address
+  - drupal:field
+  - drupal:image
+  - drupal:link
+  - drupal:taxonomy
+  - drupal:telephone
+  - drupal:text
+  - field_group:field_group
+  - geolocation:geolocation
+  - office_hours:office_hours
+  - paragraphs:paragraphs
+  - paragraphs:paragraphs_library
