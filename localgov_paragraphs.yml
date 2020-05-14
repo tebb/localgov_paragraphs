@@ -1,5 +1,0 @@
-name: 'LocalGov Drupal Paragraphs'
-description: 'Provide core paragraphs components for the LocalGov Drupal Distribution.'
-type: module
-core: 8.x
-package: 'LocalGov Drupal'

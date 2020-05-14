@@ -1,0 +1,8 @@
+{
+    "name": "localgovdrupal/localgov_paragraphs",
+    "description": "Provides core paragraph components for the LocalGovDrupal distribution.",
+    "type": "drupal-module",
+    "homepage": "https://github.com/localgovdrupal/localgov_paragraphs",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev"
+}

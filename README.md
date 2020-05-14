@@ -1,4 +1,3 @@
-# localgov_paragraphs
-Configuration and dependencies for paragraphs components fo the LocaGov Drupal distribution.
+# LocalGovDrupal Paragraphs
 
-@todo: add configuration and documentation.
+Core paragraph components for the LocalGovDrupal distribution.

@@ -1,0 +1,5 @@
+name: LocalGovDrupal Paragraphs
+description: Provides core paragraph components for the LocalGovDrupal distribution.
+package: LocalGovDrupal
+type: module
+core_version_requirement: ^8.8 || ^9
