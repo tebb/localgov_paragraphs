@@ -3,6 +3,7 @@
 namespace Drupal\localgov_paragraphs\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
@@ -27,6 +28,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class LinkNodeReference extends FormatterBase implements ContainerFactoryPluginInterface {
 
   /**
+   * Entity type manager.
+   *
    * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
   private $entityTypeManager;
@@ -50,7 +53,7 @@ class LinkNodeReference extends FormatterBase implements ContainerFactoryPluginI
   /**
    * {@inheritdoc}
    */
-  public function __construct($plugin_id, $plugin_definition, \Drupal\Core\Field\FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, EntityTypeManagerInterface $entityTypeManager) {
+  public function __construct($plugin_id, $plugin_definition, FieldDefinitionInterface $field_definition, array $settings, $label, $view_mode, array $third_party_settings, EntityTypeManagerInterface $entityTypeManager) {
     parent::__construct($plugin_id, $plugin_definition, $field_definition, $settings, $label, $view_mode, $third_party_settings);
     $this->entityTypeManager = $entityTypeManager;
   }
@@ -76,24 +79,31 @@ class LinkNodeReference extends FormatterBase implements ContainerFactoryPluginI
   /**
    * Build the render array for external links.
    *
-   * @param $item
+   * @param \Drupal\link\Plugin\Field\FieldType\LinkItem $item
+   *   External ink to render.
    *
    * @return array
+   *   Render array.
    */
   private function buildExternal(LinkItem $item) {
     return [
       '#theme' => 'dummy_teaser',
       '#title' => $item->getValue()['title'],
-      '#url' => Url::fromUri($item->getValue()['uri'])
+      '#url' => Url::fromUri($item->getValue()['uri']),
     ];
   }
 
   /**
    * Build the render array for internal links.
    *
-   * @param $item
+   * @param \Drupal\link\Plugin\Field\FieldType\LinkItem $item
+   *   Internal link to render.
+   * @param string $langcode
+   *   Language to render link as.
    *
    * @return array
+   *   Render array.
+   *
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   private function buildInternal(LinkItem $item, $langcode) {
@@ -105,7 +115,8 @@ class LinkNodeReference extends FormatterBase implements ContainerFactoryPluginI
       if ($entity) {
         $view_builder = $this->entityTypeManager->getViewBuilder($entity->getEntityTypeId());
         return $view_builder->view($entity, 'teaser', $langcode);
-      } else {
+      }
+      else {
         return [];
       }
     }
@@ -114,4 +125,5 @@ class LinkNodeReference extends FormatterBase implements ContainerFactoryPluginI
       return $this->buildExternal($item);
     }
   }
+
 }
