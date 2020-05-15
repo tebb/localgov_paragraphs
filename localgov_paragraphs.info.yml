@@ -5,15 +5,23 @@ type: module
 core_version_requirement: ^8.8 || ^9
 
 dependencies:
-  - address:address
+  # Drupal
   - drupal:field
   - drupal:image
   - drupal:link
   - drupal:taxonomy
   - drupal:telephone
   - drupal:text
+  - drupal:views
+  # Contrib
+  - address:address
+  - entity_browser:entity_browser
+  - entity_usage:entity_usage
   - field_group:field_group
   - geolocation:geolocation
+  - geolocation:geolocation_google_maps
   - office_hours:office_hours
   - paragraphs:paragraphs
   - paragraphs:paragraphs_library
+  # LocalGovDrupal
+  - localgov_topics:localgov_topics

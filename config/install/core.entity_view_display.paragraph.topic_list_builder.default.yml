@@ -6,8 +6,6 @@ dependencies:
     - field.field.paragraph.topic_list_builder.field_links
     - field.field.paragraph.topic_list_builder.field_topic_term
     - paragraphs.paragraphs_type.topic_list_builder
-  module:
-    - bhcc_sub_hub
 id: paragraph.topic_list_builder.default
 targetEntityType: paragraph
 bundle: topic_list_builder

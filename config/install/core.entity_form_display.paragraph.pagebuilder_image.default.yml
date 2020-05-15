@@ -8,7 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.pagebuilder_image
   module:
     - image
-    - imce
     - text
 id: paragraph.pagebuilder_image.default
 targetEntityType: paragraph
@@ -28,9 +27,7 @@ content:
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
-    third_party_settings:
-      imce:
-        enabled: true
+    third_party_settings: {  }
     type: image_image
     region: content
 hidden:
