@@ -55,7 +55,6 @@ function localgov_paragraphs_preprocess_paragraph__topic_list_builder(&$variable
 
     // Count how many nodes this paragraph has.
     $nodes_in_paragraph = $paragraph->get('field_links')->count();
-
     $variables['show_more'] = ($nodes_in_term > $nodes_in_paragraph);
   }
 
