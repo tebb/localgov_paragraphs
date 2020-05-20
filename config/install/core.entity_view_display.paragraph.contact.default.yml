@@ -80,11 +80,11 @@ content:
     weight: 15
     label: hidden
     settings:
-      set_marker: '1'
+      set_marker: true
       title: ''
-      info_text: ''
-      use_overridden_map_settings: 0
-      common_map: ''
+      info_text: {  }
+      use_overridden_map_settings: false
+      common_map: false
       map_provider_id: google_maps
       map_provider_settings:
         height: 400px
@@ -147,7 +147,7 @@ content:
         open_text: 'Currently open!'
         closed_text: 'Currently closed'
       schema:
-        enabled: '1'
+        enabled: true
       compress: false
       timezone_field: ''
     third_party_settings: {  }
