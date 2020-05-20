@@ -18,9 +18,6 @@
         "patches": {
             "drupal/office_hours": {
                 "#3072276 Missing schema definitions": "https://www.drupal.org/files/issues/2019-08-02/3072276-2.patch"
-            },
-            "drupal/geofield": {
-                "#3095877 Missing schema definitions": "https://www.drupal.org/files/issues/2019-11-21/3095877-2.patch"
             }
         }
     }
