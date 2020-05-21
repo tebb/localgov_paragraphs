@@ -6,6 +6,7 @@
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "require": {
+        "cweagans/composer-patches": "^1.6",
         "drupal/address": "^1.8",
         "drupal/entity_browser": "^2.5",
         "drupal/entity_usage": "^2.0@beta",
@@ -14,5 +15,17 @@
         "drupal/office_hours": "^1.2",
         "drupal/paragraphs": "^1.11",
         "localgovdrupal/localgov_topics": "dev-master"
+    },
+    "extra": {
+        "enable-patching": true,
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/office_hours": {
+                "Fix schema": "https://www.drupal.org/files/issues/2019-08-02/3072276-2.patch"
+            }
+        }
     }
 }
