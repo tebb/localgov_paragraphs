@@ -10,15 +10,6 @@ use Drupal\Tests\paragraphs\Functional\Classic\ParagraphsTestBase;
 class ParagraphsAdministrationTest extends ParagraphsTestBase {
 
   /**
-   * Disable schema checking because some contrib modules are borked.
-   *
-   * @see \Drupal\Core\Config\Development\ConfigSchemaChecker
-   *
-   * {@inheritdoc}
-   */
-  protected $strictConfigSchema = FALSE;
-
-  /**
    * Modules to enable.
    *
    * @var array
