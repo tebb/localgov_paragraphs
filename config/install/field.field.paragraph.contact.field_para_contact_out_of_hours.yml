@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_contact_out_of_hours
+    - paragraphs.paragraphs_type.contact
+  module:
+    - telephone
+id: paragraph.contact.field_para_contact_out_of_hours
+field_name: field_para_contact_out_of_hours
+entity_type: paragraph
+bundle: contact
+label: 'Out of hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
