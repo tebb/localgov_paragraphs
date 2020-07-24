@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.pagebuilder_image.field_caption
-    - field.field.paragraph.pagebuilder_image.field_image
+    - field.field.paragraph.localgov_image.field_caption
+    - field.field.paragraph.localgov_image.field_image
     - image.style.thumbnail
-    - paragraphs.paragraphs_type.pagebuilder_image
+    - paragraphs.paragraphs_type.localgov_image
   module:
     - image
     - text
-id: paragraph.pagebuilder_image.default
+id: paragraph.localgov_image.default
 targetEntityType: paragraph
-bundle: pagebuilder_image
+bundle: localgov_image
 mode: default
 content:
   field_caption:

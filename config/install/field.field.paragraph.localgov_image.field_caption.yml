@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_caption
-    - paragraphs.paragraphs_type.pagebuilder_image
+    - paragraphs.paragraphs_type.localgov_image
   module:
     - text
-id: paragraph.pagebuilder_image.field_caption
+id: paragraph.localgov_image.field_caption
 field_name: field_caption
 entity_type: paragraph
-bundle: pagebuilder_image
+bundle: localgov_image
 label: Caption
 description: ''
 required: false
