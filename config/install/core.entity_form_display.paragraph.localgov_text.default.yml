@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.pagebuilder_text.field_text
-    - paragraphs.paragraphs_type.pagebuilder_text
+    - field.field.paragraph.localgov_text.field_text
+    - paragraphs.paragraphs_type.localgov_text
   module:
     - text
-id: paragraph.pagebuilder_text.default
+id: paragraph.localgov_text.default
 targetEntityType: paragraph
-bundle: pagebuilder_text
+bundle: localgov_text
 mode: default
 content:
   field_text:

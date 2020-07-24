@@ -32,7 +32,7 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
     $this->assertSession()->pageTextContains('advanced_links');
     $this->assertSession()->pageTextContains('contact');
     $this->assertSession()->pageTextContains('localgov_image');
-    $this->assertSession()->pageTextContains('pagebuilder_text');
+    $this->assertSession()->pageTextContains('localgov_text');
 
     // Check advanced_links paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/advanced_links/fields');
@@ -64,7 +64,7 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
     $this->assertSession()->pageTextContains('field_image');
 
     // Check pagebuilder_text paragraph fields.
-    $this->drupalGet('/admin/structure/paragraphs_type/pagebuilder_text/fields');
+    $this->drupalGet('/admin/structure/paragraphs_type/localgov_text/fields');
     $this->assertSession()->pageTextContains('field_text');
   }
 

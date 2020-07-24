@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_text
-    - paragraphs.paragraphs_type.pagebuilder_text
+    - paragraphs.paragraphs_type.localgov_text
   module:
     - text
-id: paragraph.pagebuilder_text.field_text
+id: paragraph.localgov_text.field_text
 field_name: field_text
 entity_type: paragraph
-bundle: pagebuilder_text
+bundle: localgov_text
 label: Text
 description: ''
 required: false

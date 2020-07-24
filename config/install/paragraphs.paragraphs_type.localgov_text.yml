@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: pagebuilder_text
+id: localgov_text
 label: Text
 icon_uuid: null
 description: ''
