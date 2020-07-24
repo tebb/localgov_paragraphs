@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_image.field_caption
-    - field.field.paragraph.localgov_image.field_image
+    - field.field.paragraph.localgov_image.localgov_caption
+    - field.field.paragraph.localgov_image.localgov_image
     - paragraphs.paragraphs_type.localgov_image
   module:
     - image
@@ -13,14 +13,14 @@ targetEntityType: paragraph
 bundle: localgov_image
 mode: default
 content:
-  field_caption:
+  localgov_caption:
     weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_image:
+  localgov_image:
     weight: 0
     label: above
     settings:

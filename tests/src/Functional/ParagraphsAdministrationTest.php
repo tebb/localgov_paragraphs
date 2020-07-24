@@ -36,8 +36,8 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
 
     // Check advanced_links paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/localgov_link/fields');
-    $this->assertSession()->pageTextContains('field_title');
-    $this->assertSession()->pageTextContains('field_url');
+    $this->assertSession()->pageTextContains('localgov_title');
+    $this->assertSession()->pageTextContains('localgov_url');
 
     // Check contact paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/localgov_contact/fields');
@@ -60,12 +60,12 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
 
     // Check pagebuilder_image paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/localgov_image/fields');
-    $this->assertSession()->pageTextContains('field_caption');
-    $this->assertSession()->pageTextContains('field_image');
+    $this->assertSession()->pageTextContains('localgov_caption');
+    $this->assertSession()->pageTextContains('localgov_image');
 
     // Check pagebuilder_text paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/localgov_text/fields');
-    $this->assertSession()->pageTextContains('field_text');
+    $this->assertSession()->pageTextContains('localgov_text');
   }
 
   /**

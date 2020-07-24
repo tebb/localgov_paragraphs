@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: localgov_link
-label: 'Advanced links'
+label: 'Link'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_text.field_text
+    - field.field.paragraph.localgov_text.localgov_text
     - paragraphs.paragraphs_type.localgov_text
   module:
     - text
@@ -11,7 +11,7 @@ targetEntityType: paragraph
 bundle: localgov_text
 mode: default
 content:
-  field_text:
+  localgov_text:
     weight: 0
     label: hidden
     settings: {  }
