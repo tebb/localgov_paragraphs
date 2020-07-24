@@ -30,7 +30,7 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
     // Check paragraph types installed.
     $this->drupalGet('/admin/structure/paragraphs_type');
     $this->assertSession()->pageTextContains('advanced_links');
-    $this->assertSession()->pageTextContains('contact');
+    $this->assertSession()->pageTextContains('localgov_contact');
     $this->assertSession()->pageTextContains('localgov_image');
     $this->assertSession()->pageTextContains('localgov_text');
 
@@ -40,23 +40,23 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
     $this->assertSession()->pageTextContains('field_url');
 
     // Check contact paragraph fields.
-    $this->drupalGet('/admin/structure/paragraphs_type/contact/fields');
-    $this->assertSession()->pageTextContains('field_para_contact_address');
-    $this->assertSession()->pageTextContains('field_para_contact_url');
-    $this->assertSession()->pageTextContains('field_para_contact_email');
-    $this->assertSession()->pageTextContains('field_para_contact_facebook');
-    $this->assertSession()->pageTextContains('field_para_contact_heading');
-    $this->assertSession()->pageTextContains('field_para_contact_instagram');
-    $this->assertSession()->pageTextContains('field_para_contact_location');
-    $this->assertSession()->pageTextContains('field_para_contact_minicom');
-    $this->assertSession()->pageTextContains('field_para_contact_mobile');
-    $this->assertSession()->pageTextContains('field_para_contact_office_hours');
-    $this->assertSession()->pageTextContains('field_para_contact_other_social');
-    $this->assertSession()->pageTextContains('field_para_contact_other_url');
-    $this->assertSession()->pageTextContains('field_para_contact_out_of_hours');
-    $this->assertSession()->pageTextContains('field_para_contact_phone');
-    $this->assertSession()->pageTextContains('field_para_contact_subheading');
-    $this->assertSession()->pageTextContains('field_para_contact_twitter');
+    $this->drupalGet('/admin/structure/paragraphs_type/localgov_contact/fields');
+    $this->assertSession()->pageTextContains('localgov_contact_address');
+    $this->assertSession()->pageTextContains('localgov_contact_url');
+    $this->assertSession()->pageTextContains('localgov_contact_email');
+    $this->assertSession()->pageTextContains('localgov_contact_facebook');
+    $this->assertSession()->pageTextContains('localgov_contact_heading');
+    $this->assertSession()->pageTextContains('localgov_contact_instagram');
+    $this->assertSession()->pageTextContains('localgov_contact_location');
+    $this->assertSession()->pageTextContains('localgov_contact_minicom');
+    $this->assertSession()->pageTextContains('localgov_contact_mobile');
+    $this->assertSession()->pageTextContains('localgov_contact_office_hours');
+    $this->assertSession()->pageTextContains('localgov_contact_other_social');
+    $this->assertSession()->pageTextContains('localgov_contact_other_url');
+    $this->assertSession()->pageTextContains('localgov_contact_out_of_hours');
+    $this->assertSession()->pageTextContains('localgov_contact_phone');
+    $this->assertSession()->pageTextContains('localgov_contact_subheading');
+    $this->assertSession()->pageTextContains('localgov_contact_twitter');
 
     // Check pagebuilder_image paragraph fields.
     $this->drupalGet('/admin/structure/paragraphs_type/localgov_image/fields');
