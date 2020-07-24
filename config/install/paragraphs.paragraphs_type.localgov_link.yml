@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: advanced_links
+id: localgov_link
 label: 'Advanced links'
 icon_uuid: null
 description: ''

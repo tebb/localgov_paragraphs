@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.advanced_links.field_title
-    - field.field.paragraph.advanced_links.field_url
-    - paragraphs.paragraphs_type.advanced_links
-id: paragraph.advanced_links.default
+    - field.field.paragraph.localgov_link.field_title
+    - field.field.paragraph.localgov_link.field_url
+    - paragraphs.paragraphs_type.localgov_link
+id: paragraph.localgov_link.default
 targetEntityType: paragraph
-bundle: advanced_links
+bundle: localgov_link
 mode: default
 content:
   field_title:

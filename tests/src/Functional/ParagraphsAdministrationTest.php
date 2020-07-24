@@ -29,13 +29,13 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
 
     // Check paragraph types installed.
     $this->drupalGet('/admin/structure/paragraphs_type');
-    $this->assertSession()->pageTextContains('advanced_links');
     $this->assertSession()->pageTextContains('localgov_contact');
     $this->assertSession()->pageTextContains('localgov_image');
+    $this->assertSession()->pageTextContains('localgov_link');
     $this->assertSession()->pageTextContains('localgov_text');
 
     // Check advanced_links paragraph fields.
-    $this->drupalGet('/admin/structure/paragraphs_type/advanced_links/fields');
+    $this->drupalGet('/admin/structure/paragraphs_type/localgov_link/fields');
     $this->assertSession()->pageTextContains('field_title');
     $this->assertSession()->pageTextContains('field_url');
 
