@@ -15,7 +15,6 @@ class ParagraphsAdministrationTest extends ParagraphsTestBase {
    * @var array
    */
   public static $modules = [
-    'paragraphs',
     'localgov_paragraphs',
   ];
 

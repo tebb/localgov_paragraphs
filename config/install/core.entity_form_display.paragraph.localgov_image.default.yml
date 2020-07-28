@@ -2,18 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_image.localgov_caption
     - field.field.paragraph.localgov_image.localgov_image
-    - image.style.thumbnail
+    - field.field.paragraph.localgov_image.localgov_caption
     - paragraphs.paragraphs_type.localgov_image
   module:
-    - image
+    - media_library
     - text
 id: paragraph.localgov_image.default
 targetEntityType: paragraph
 bundle: localgov_image
 mode: default
 content:
+  localgov_image:
+    weight: 103
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
   localgov_caption:
     weight: 102
     settings:
@@ -21,14 +27,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  localgov_image:
-    weight: 101
-    settings:
-      preview_image_style: thumbnail
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_image
     region: content
 hidden:
   created: true
