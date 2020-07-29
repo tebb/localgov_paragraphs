@@ -14,14 +14,14 @@ bundle: localgov_image
 mode: default
 content:
   localgov_image:
-    weight: 103
+    weight: 1
     settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
   localgov_caption:
-    weight: 102
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
