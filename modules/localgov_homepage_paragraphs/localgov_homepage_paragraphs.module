@@ -21,13 +21,13 @@ use Drupal\Core\Template\Attribute;
 function localgov_homepage_paragraphs_theme($existing, $type, $theme, $path) {
 
   return [
-    'paragraph__newsroom_teasers' => [
+    'paragraph__localgov_newsroom_teasers' => [
       'base hook' => 'paragraph',
     ],
-    'paragraph__homepage_icons' => [
+    'paragraph__localgov_homepage_icons' => [
       'base hook' => 'paragraph',
     ],
-    'paragraph__homepage_ia_blocks' => [
+    'paragraph__localgov_homepage_ia_blocks' => [
       'base hook' => 'paragraph',
     ],
     'field__field_newsroom' => [
@@ -49,7 +49,7 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
   /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
   $paragraph = $variables['paragraph'];
 
-  if ($paragraph->bundle() === 'homepage_icons') {
+  if ($paragraph->bundle() === 'localgov_homepage_icons') {
     // Set url in plain text as renderable field in the template.
     if (!$paragraph->get('field_link')->isEmpty()) {
       $link = $paragraph->get('field_link')->first()->getValue();
@@ -69,7 +69,7 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
     }
   }
 
-  if ($paragraph->bundle() === 'homepage_ia_blocks') {
+  if ($paragraph->bundle() === 'localgov_homepage_ia_blocks') {
     // Check if paragraph is promoted.
     $variables['promoted'] = (bool) $paragraph->get('field_promoted')->first()->getValue()['value'];
 

@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {  }
-id: 'news_16_9'
+id: 'localgov_news_16_9'
 label: '16:9 for News image'
 description: ''
 aspect_ratio: '16:9'

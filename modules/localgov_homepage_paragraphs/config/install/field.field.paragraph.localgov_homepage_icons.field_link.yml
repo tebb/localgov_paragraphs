@@ -3,17 +3,17 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_link
-    - paragraphs.paragraphs_type.newsroom_teasers
+    - paragraphs.paragraphs_type.localgov_homepage_icons
   module:
     - link
-id: paragraph.newsroom_teasers.field_link
+id: paragraph.localgov_homepage_icons.field_link
 field_name: field_link
 entity_type: paragraph
-bundle: newsroom_teasers
-label: 'Title link'
+bundle: localgov_homepage_icons
+label: Link
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

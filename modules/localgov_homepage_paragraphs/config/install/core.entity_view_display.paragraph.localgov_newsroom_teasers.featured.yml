@@ -2,24 +2,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.newsroom_teasers.field_image
-    - field.field.paragraph.newsroom_teasers.field_link
-    - field.field.paragraph.newsroom_teasers.field_summary
-    - field.field.paragraph.newsroom_teasers.field_title
-    - image.style.newsroom_teaser
-    - paragraphs.paragraphs_type.newsroom_teasers
+    - core.entity_view_mode.paragraph.featured
+    - field.field.paragraph.localgov_newsroom_teasers.field_image
+    - field.field.paragraph.localgov_newsroom_teasers.field_link
+    - field.field.paragraph.localgov_newsroom_teasers.field_summary
+    - field.field.paragraph.localgov_newsroom_teasers.field_title
+    - image.style.localgov_248x181
+    - paragraphs.paragraphs_type.localgov_newsroom_teasers
   module:
     - image
-id: paragraph.newsroom_teasers.default
+id: paragraph.localgov_newsroom_teasers.featured
 targetEntityType: paragraph
-bundle: newsroom_teasers
-mode: default
+bundle: localgov_newsroom_teasers
+mode: featured
 content:
   field_image:
     weight: 2
     label: hidden
     settings:
-      image_style: newsroom_teaser
+      image_style: localgov_248x181
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -41,4 +42,3 @@ content:
     region: content
 hidden:
   field_link: true
-  search_api_excerpt: true

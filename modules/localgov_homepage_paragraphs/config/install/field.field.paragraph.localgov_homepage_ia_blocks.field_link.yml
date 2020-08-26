@@ -3,17 +3,17 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_link
-    - paragraphs.paragraphs_type.homepage_icons
+    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
   module:
     - link
-id: paragraph.homepage_icons.field_link
+id: paragraph.localgov_homepage_ia_blocks.field_link
 field_name: field_link
 entity_type: paragraph
-bundle: homepage_icons
-label: Link
+bundle: localgov_homepage_ia_blocks
+label: 'Title link'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

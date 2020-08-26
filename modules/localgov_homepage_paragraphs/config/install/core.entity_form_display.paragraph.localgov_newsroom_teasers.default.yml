@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.newsroom_teasers.field_image
-    - field.field.paragraph.newsroom_teasers.field_link
-    - field.field.paragraph.newsroom_teasers.field_summary
-    - field.field.paragraph.newsroom_teasers.field_title
+    - field.field.paragraph.localgov_newsroom_teasers.field_image
+    - field.field.paragraph.localgov_newsroom_teasers.field_link
+    - field.field.paragraph.localgov_newsroom_teasers.field_summary
+    - field.field.paragraph.localgov_newsroom_teasers.field_title
     - image.style.thumbnail
-    - paragraphs.paragraphs_type.newsroom_teasers
+    - paragraphs.paragraphs_type.localgov_newsroom_teasers
   module:
     - image
     - link
-id: paragraph.newsroom_teasers.default
+id: paragraph.localgov_newsroom_teasers.default
 targetEntityType: paragraph
-bundle: newsroom_teasers
+bundle: localgov_newsroom_teasers
 mode: default
 content:
   field_image:

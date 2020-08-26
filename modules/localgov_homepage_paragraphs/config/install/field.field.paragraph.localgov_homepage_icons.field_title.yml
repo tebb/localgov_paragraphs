@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.homepage_ia_blocks
-id: paragraph.homepage_ia_blocks.field_title
+    - paragraphs.paragraphs_type.localgov_homepage_icons
+id: paragraph.localgov_homepage_icons.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: homepage_ia_blocks
-label: 'Service title'
+bundle: localgov_homepage_icons
+label: Title
 description: ''
 required: false
 translatable: true

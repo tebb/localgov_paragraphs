@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_links
-    - paragraphs.paragraphs_type.homepage_ia_blocks
+    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
   module:
     - link
-id: paragraph.homepage_ia_blocks.field_links
+id: paragraph.localgov_homepage_ia_blocks.field_links
 field_name: field_links
 entity_type: paragraph
-bundle: homepage_ia_blocks
+bundle: localgov_homepage_ia_blocks
 label: 'Service title link'
 description: ''
 required: false

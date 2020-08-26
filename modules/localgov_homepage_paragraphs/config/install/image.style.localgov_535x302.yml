@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - crop.type.news_16_9
+    - crop.type.localgov_news_16_9
   module:
     - crop
-name: 535x302
-label: 535x302
+name: localgov_535x302
+label: LocalGov 535x302
 effects:
   38cd1939-7fb0-43e0-86b1-604655d7e061:
     uuid: 38cd1939-7fb0-43e0-86b1-604655d7e061
@@ -21,4 +21,4 @@ effects:
     id: crop_crop
     weight: -10
     data:
-      crop_type: 'news_16_9'
+      crop_type: 'localgov_news_16_9'

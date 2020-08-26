@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_summary
-    - paragraphs.paragraphs_type.newsroom_teasers
-id: paragraph.newsroom_teasers.field_summary
+    - paragraphs.paragraphs_type.localgov_newsroom_teasers
+id: paragraph.localgov_newsroom_teasers.field_summary
 field_name: field_summary
 entity_type: paragraph
-bundle: newsroom_teasers
+bundle: localgov_newsroom_teasers
 label: Summary
 description: ''
 required: false

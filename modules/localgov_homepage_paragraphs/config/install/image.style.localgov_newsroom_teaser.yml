@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-name: newsroom_teaser
-label: 'Newsroom teaser'
+name: localgov_newsroom_teaser
+label: 'LocalGov Newsroom teaser'
 effects:
   ff65eadb-38a8-471d-ba15-f3e627e8afe1:
     uuid: ff65eadb-38a8-471d-ba15-f3e627e8afe1

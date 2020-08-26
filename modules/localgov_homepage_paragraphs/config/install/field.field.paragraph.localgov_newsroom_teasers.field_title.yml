@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.homepage_icons
-id: paragraph.homepage_icons.field_title
+    - paragraphs.paragraphs_type.localgov_newsroom_teasers
+id: paragraph.localgov_newsroom_teasers.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: homepage_icons
+bundle: localgov_newsroom_teasers
 label: Title
 description: ''
 required: false

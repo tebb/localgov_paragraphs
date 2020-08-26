@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-name: 248x181
-label: 248x181
+name: localgov_248x181
+label: LocalGov 248x181
 effects:
   b8c93f24-2915-4be5-82fd-69940c874fe6:
     uuid: b8c93f24-2915-4be5-82fd-69940c874fe6

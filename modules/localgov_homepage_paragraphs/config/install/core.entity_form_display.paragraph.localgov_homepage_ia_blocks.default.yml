@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.homepage_ia_blocks.field_link
-    - field.field.paragraph.homepage_ia_blocks.field_links
-    - field.field.paragraph.homepage_ia_blocks.field_promoted
-    - field.field.paragraph.homepage_ia_blocks.field_title
-    - paragraphs.paragraphs_type.homepage_ia_blocks
+    - field.field.paragraph.localgov_homepage_ia_blocks.field_link
+    - field.field.paragraph.localgov_homepage_ia_blocks.field_links
+    - field.field.paragraph.localgov_homepage_ia_blocks.field_promoted
+    - field.field.paragraph.localgov_homepage_ia_blocks.field_title
+    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
   module:
     - link
-id: paragraph.homepage_ia_blocks.default
+id: paragraph.localgov_homepage_ia_blocks.default
 targetEntityType: paragraph
-bundle: homepage_ia_blocks
+bundle: localgov_homepage_ia_blocks
 mode: default
 content:
   field_link:
