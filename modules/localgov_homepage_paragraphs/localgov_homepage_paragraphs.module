@@ -60,7 +60,7 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
 
   if ($paragraph->bundle() === 'localgov_ia_blocks') {
     // Check if paragraph is promoted.
-    $variables['promoted'] = (bool) $paragraph->get('field_promoted')->first()->getValue()['value'];
+    $variables['promoted'] = (bool) $paragraph->get('localgov_ia_blocks_promoted')->first()->getValue()['value'];
 
     // Set url in plain text as renderable field in the template.
     if (!$paragraph->get('localgov_ia_blocks_link')->isEmpty()) {
