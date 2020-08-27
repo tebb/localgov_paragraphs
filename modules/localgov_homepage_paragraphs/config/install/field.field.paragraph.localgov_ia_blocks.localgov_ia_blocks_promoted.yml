@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_promoted
-    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
-id: paragraph.localgov_homepage_ia_blocks.field_promoted
-field_name: field_promoted
+    - field.storage.paragraph.localgov_ia_blocks_promoted
+    - paragraphs.paragraphs_type.localgov_ia_blocks
+id: paragraph.localgov_ia_blocks.localgov_ia_blocks_promoted
+field_name: localgov_ia_blocks_promoted
 entity_type: paragraph
-bundle: localgov_homepage_ia_blocks
+bundle: localgov_ia_blocks
 label: Promoted
 description: ''
 required: false

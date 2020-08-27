@@ -2,16 +2,18 @@ langcode: en
 status: true
 dependencies:
   module:
-    - link
     - paragraphs
-id: paragraph.field_links
-field_name: field_links
+id: paragraph.localgov_ia_blocks_title
+field_name: localgov_ia_blocks_title
 entity_type: paragraph
-type: link
-settings: {  }
-module: link
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

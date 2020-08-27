@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_links
-    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
+    - field.storage.paragraph.localgov_ia_blocks_links
+    - paragraphs.paragraphs_type.localgov_ia_blocks
   module:
     - link
-id: paragraph.localgov_homepage_ia_blocks.field_links
-field_name: field_links
+id: paragraph.localgov_ia_blocks.localgov_ia_blocks_links
+field_name: localgov_ia_blocks_links
 entity_type: paragraph
-bundle: localgov_homepage_ia_blocks
+bundle: localgov_ia_blocks
 label: 'Service title link'
 description: ''
 required: false

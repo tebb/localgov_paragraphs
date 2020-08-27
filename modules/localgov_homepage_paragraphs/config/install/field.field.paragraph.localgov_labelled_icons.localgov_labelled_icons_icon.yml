@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_icon
-    - paragraphs.paragraphs_type.localgov_homepage_icons
+    - field.storage.paragraph.localgov_labelled_icons_icon
+    - paragraphs.paragraphs_type.localgov_labelled_icons
   module:
     - fontawesome
-id: paragraph.localgov_homepage_icons.field_icon
-field_name: field_icon
+id: paragraph.localgov_labelled_icons.localgov_labelled_icons_icon
+field_name: localgov_labelled_icons_icon
 entity_type: paragraph
-bundle: localgov_homepage_icons
+bundle: localgov_labelled_icons
 label: Icon
 description: ''
 required: false

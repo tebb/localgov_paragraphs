@@ -2,25 +2,25 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_homepage_icons.field_icon
-    - field.field.paragraph.localgov_homepage_icons.field_link
-    - field.field.paragraph.localgov_homepage_icons.field_title
-    - paragraphs.paragraphs_type.localgov_homepage_icons
+    - field.field.paragraph.localgov_labelled_icons.localgov_labelled_icons_icon
+    - field.field.paragraph.localgov_labelled_icons.localgov_labelled_icons_link
+    - field.field.paragraph.localgov_labelled_icons.localgov_labelled_icons_title
+    - paragraphs.paragraphs_type.localgov_labelled_icons
   module:
     - fontawesome
     - link
-id: paragraph.localgov_homepage_icons.default
+id: paragraph.localgov_labelled_icons.default
 targetEntityType: paragraph
-bundle: localgov_homepage_icons
+bundle: localgov_labelled_icons
 mode: default
 content:
-  field_icon:
+  localgov_labelled_icons_icon:
     weight: 103
     settings: {  }
     third_party_settings: {  }
     type: fontawesome_icon_widget
     region: content
-  field_link:
+  localgov_labelled_icons_link:
     weight: 102
     settings:
       placeholder_url: ''
@@ -28,7 +28,7 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_title:
+  localgov_labelled_icons_title:
     weight: 101
     settings:
       size: 60

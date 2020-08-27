@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
+    - field.storage.paragraph.localgov_newsroom_teasers_image
     - paragraphs.paragraphs_type.localgov_newsroom_teasers
   module:
     - image
-id: paragraph.localgov_newsroom_teasers.field_image
-field_name: field_image
+id: paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_image
+field_name: localgov_newsroom_teasers_image
 entity_type: paragraph
 bundle: localgov_newsroom_teasers
 label: Image

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.localgov_labelled_icons_title
+    - paragraphs.paragraphs_type.localgov_labelled_icons
+id: paragraph.localgov_labelled_icons.localgov_labelled_icons_title
+field_name: localgov_labelled_icons_title
+entity_type: paragraph
+bundle: localgov_labelled_icons
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

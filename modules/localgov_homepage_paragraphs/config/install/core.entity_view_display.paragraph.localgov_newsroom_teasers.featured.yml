@@ -3,10 +3,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.featured
-    - field.field.paragraph.localgov_newsroom_teasers.field_image
-    - field.field.paragraph.localgov_newsroom_teasers.field_link
-    - field.field.paragraph.localgov_newsroom_teasers.field_summary
-    - field.field.paragraph.localgov_newsroom_teasers.field_title
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_image
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_link
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_summar
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_title
     - image.style.localgov_248x181
     - paragraphs.paragraphs_type.localgov_newsroom_teasers
   module:
@@ -16,7 +16,7 @@ targetEntityType: paragraph
 bundle: localgov_newsroom_teasers
 mode: featured
 content:
-  field_image:
+  localgov_newsroom_teasers_image:
     weight: 2
     label: hidden
     settings:
@@ -25,14 +25,14 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_summary:
+  localgov_newsroom_teasers_summar:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
-  field_title:
+  localgov_newsroom_teasers_title:
     weight: 0
     label: hidden
     settings:
@@ -41,4 +41,4 @@ content:
     type: string
     region: content
 hidden:
-  field_link: true
+  localgov_newsroom_teasers_link: true

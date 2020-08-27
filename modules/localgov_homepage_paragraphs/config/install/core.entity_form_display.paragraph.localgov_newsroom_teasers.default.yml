@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_newsroom_teasers.field_image
-    - field.field.paragraph.localgov_newsroom_teasers.field_link
-    - field.field.paragraph.localgov_newsroom_teasers.field_summary
-    - field.field.paragraph.localgov_newsroom_teasers.field_title
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_image
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_link
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_summar
+    - field.field.paragraph.localgov_newsroom_teasers.localgov_newsroom_teasers_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.localgov_newsroom_teasers
   module:
@@ -16,7 +16,7 @@ targetEntityType: paragraph
 bundle: localgov_newsroom_teasers
 mode: default
 content:
-  field_image:
+  localgov_newsroom_teasers_image:
     weight: 3
     settings:
       preview_image_style: thumbnail
@@ -24,7 +24,7 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_link:
+  localgov_newsroom_teasers_link:
     weight: 1
     settings:
       placeholder_url: ''
@@ -32,7 +32,7 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_summary:
+  localgov_newsroom_teasers_summar:
     weight: 2
     settings:
       rows: 5
@@ -40,7 +40,7 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_title:
+  localgov_newsroom_teasers_title:
     weight: 0
     settings:
       size: 60

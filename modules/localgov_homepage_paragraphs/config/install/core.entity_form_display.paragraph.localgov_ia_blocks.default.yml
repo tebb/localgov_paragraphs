@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_homepage_ia_blocks.field_link
-    - field.field.paragraph.localgov_homepage_ia_blocks.field_links
-    - field.field.paragraph.localgov_homepage_ia_blocks.field_promoted
-    - field.field.paragraph.localgov_homepage_ia_blocks.field_title
-    - paragraphs.paragraphs_type.localgov_homepage_ia_blocks
+    - field.field.paragraph.localgov_ia_blocks.localgov_ia_blocks_link
+    - field.field.paragraph.localgov_ia_blocks.localgov_ia_blocks_links
+    - field.field.paragraph.localgov_ia_blocks.localgov_ia_blocks_promoted
+    - field.field.paragraph.localgov_ia_blocks.localgov_ia_blocks_title
+    - paragraphs.paragraphs_type.localgov_ia_blocks
   module:
     - link
-id: paragraph.localgov_homepage_ia_blocks.default
+id: paragraph.localgov_ia_blocks.default
 targetEntityType: paragraph
-bundle: localgov_homepage_ia_blocks
+bundle: localgov_ia_blocks
 mode: default
 content:
-  field_link:
+  localgov_ia_blocks_link:
     weight: 2
     settings:
       placeholder_url: ''
@@ -22,7 +22,7 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_links:
+  localgov_ia_blocks_links:
     weight: 4
     settings:
       placeholder_url: ''
@@ -30,14 +30,14 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_promoted:
+  localgov_ia_blocks_promoted:
     weight: 3
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_title:
+  localgov_ia_blocks_title:
     weight: 1
     settings:
       size: 60

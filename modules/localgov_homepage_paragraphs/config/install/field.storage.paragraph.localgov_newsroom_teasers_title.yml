@@ -2,14 +2,16 @@ langcode: en
 status: true
 dependencies:
   module:
-    - fontawesome
     - paragraphs
-id: paragraph.field_icon
-field_name: field_icon
+id: paragraph.localgov_newsroom_teasers_title
+field_name: localgov_newsroom_teasers_title
 entity_type: paragraph
-type: fontawesome_icon
-settings: {  }
-module: fontawesome
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

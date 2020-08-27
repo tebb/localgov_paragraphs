@@ -2,13 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
+    - link
     - paragraphs
-id: paragraph.field_promoted
-field_name: field_promoted
+id: paragraph.localgov_newsroom_teasers_link
+field_name: localgov_newsroom_teasers_link
 entity_type: paragraph
-type: boolean
+type: link
 settings: {  }
-module: core
+module: link
 locked: false
 cardinality: 1
 translatable: true

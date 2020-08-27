@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: localgov_homepage_icons
-label: 'Homepage icons'
+id: localgov_ia_blocks
+label: 'IA blocks'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - link
+    - fontawesome
     - paragraphs
-id: paragraph.field_link
-field_name: field_link
+id: paragraph.localgov_labelled_icons_icon
+field_name: localgov_labelled_icons_icon
 entity_type: paragraph
-type: link
+type: fontawesome_icon
 settings: {  }
-module: link
+module: fontawesome
 locked: false
 cardinality: 1
 translatable: true
