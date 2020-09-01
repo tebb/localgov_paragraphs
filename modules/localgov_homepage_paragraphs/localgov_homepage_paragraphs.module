@@ -84,4 +84,11 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
       ],
     ];
   }
+
+  if ($paragraph->bundle() === 'localgov_newsroom_teaser') {
+    if (!$paragraph->get('localgov_newsroom_teaser_link')->isEmpty()) {
+      $link = $paragraph->get('localgov_newsroom_teaser_link')->first()->getValue();
+      $variables['link'] = Url::fromUri($link['uri']);
+    }
+  }
 }

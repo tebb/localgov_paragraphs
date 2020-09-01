@@ -7,24 +7,21 @@ dependencies:
     - field.field.paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_link
     - field.field.paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_summary
     - field.field.paragraph.localgov_newsroom_teaser.localgov_newsroom_teaser_title
-    - image.style.localgov_248x181
     - paragraphs.paragraphs_type.localgov_newsroom_teaser
-  module:
-    - image
 id: paragraph.localgov_newsroom_teaser.featured
 targetEntityType: paragraph
 bundle: localgov_newsroom_teaser
 mode: featured
 content:
   localgov_newsroom_teaser_image:
+    type: entity_reference_entity_view
     weight: 2
+    region: content
     label: hidden
     settings:
-      image_style: localgov_248x181
-      image_link: ''
+      view_mode: localgov_featured
+      link: false
     third_party_settings: {  }
-    type: image
-    region: content
   localgov_newsroom_teaser_summary:
     weight: 1
     label: hidden
