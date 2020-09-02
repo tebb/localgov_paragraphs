@@ -49,7 +49,7 @@ class CustomInlineParagraphsWidget extends InlineParagraphsWidget {
       '#type' => 'select',
       '#title' => $this->t('Description field'),
       '#options' => [
-        '_all' => 'Default description',
+        '_all' => $this->t('Default description'),
       ] + $this->fieldNamesOptions(),
       '#default_value' => $this->getSetting('description_field'),
     ];
