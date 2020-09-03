@@ -1,6 +1,6 @@
-name: LocalGovDrupal Paragraphs
-description: Provides core paragraph components for the LocalGovDrupal distribution.
-package: LocalGovDrupal
+name: LocalGov Paragraphs
+description: Provides core paragraph components for the LocalGov Drupal distribution.
+package: LocalGov Drupal
 type: module
 core_version_requirement: ^8.8 || ^9
 
