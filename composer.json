@@ -17,7 +17,7 @@
         "drupal/geolocation": "^3.1",
         "drupal/office_hours": "^1.2",
         "drupal/paragraphs": "^1.11",
-        "localgovdrupal/localgov_core": "dev-master",
+        "localgovdrupal/localgov_core": "dev-feature/homepage-paragraphs-display-modes",
         "localgovdrupal/localgov_topics": "dev-master"
     },
     "extra": {
