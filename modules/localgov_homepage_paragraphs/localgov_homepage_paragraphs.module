@@ -61,7 +61,7 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
       ]);
     }
   }
-  else if ($paragraph->bundle() === 'localgov_ia_block') {
+  elseif ($paragraph->bundle() === 'localgov_ia_block') {
     // Check if paragraph is promoted.
     $variables['promoted'] = (bool) $paragraph->get('localgov_ia_block_promoted')->first()->getValue()['value'];
 
@@ -87,13 +87,13 @@ function localgov_homepage_paragraphs_preprocess_paragraph(&$variables) {
       ],
     ];
   }
-  else if ($paragraph->bundle() === 'localgov_newsroom_teaser') {
+  elseif ($paragraph->bundle() === 'localgov_newsroom_teaser') {
     if (!$paragraph->get('localgov_newsroom_teaser_link')->isEmpty()) {
       $link = $paragraph->get('localgov_newsroom_teaser_link')->first()->getValue();
       $variables['link'] = Url::fromUri($link['uri']);
     }
   }
-  else if ($paragraph->bundle() === 'localgov_subscribe_panel') {
+  elseif ($paragraph->bundle() === 'localgov_subscribe_panel') {
     $variables['attributes']['class'][] = 'row';
   }
 }
