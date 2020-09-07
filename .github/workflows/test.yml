@@ -30,8 +30,7 @@ jobs:
 
       - name: Extract Git branch name from a pull request
         if: github.event_name == 'pull_request'
-        env:
-          GIT_BRANCH: ${{ github.head_ref }}
+        run: echo "::set-env name=GIT_BRANCH::${GITHUB_HEAD_REF}"
 
       - name: Grab test target
         run: composer --working-dir=html require ${{ github.repository }}:'dev-${GIT_BRANCH} as dev-master'
