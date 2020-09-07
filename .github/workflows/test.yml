@@ -24,7 +24,7 @@ jobs:
       - name: Grab target branch to test
         run: |
           composer --working-dir=html config repositories.1 vcs git@github.com:${{ github.repository }}.git
-          composer --working-dir=html require ${{ github.repository }}:'dev-${{ github.ref }} as dev-master'
+          composer --working-dir=html require ${{ github.repository }}:'dev-${{ github.head_ref }} as dev-master'
 
       - name: Start Docker environment
         run: docker-compose up -d
