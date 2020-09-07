@@ -8,3 +8,5 @@ Contains the following paragraph types:
 * Contact (contact)
 * Image (pagebuilder_image)
 * Text (pagebuilder_text)
+
+![Test LocalGov Drupal Paragraphs](https://github.com/localgovdrupal/localgov_paragraphs/workflows/Test%20LocalGov%20Drupal%20Paragraphs/badge.svg)
