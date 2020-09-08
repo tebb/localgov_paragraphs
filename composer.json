@@ -8,12 +8,16 @@
     "require": {
         "cweagans/composer-patches": "^1.6",
         "drupal/address": "^1.8",
+        "drupal/crop": "^2.1",
         "drupal/entity_browser": "^2.5",
         "drupal/entity_usage": "^2.0@beta",
+        "drupal/field_formatter_class": "^1.4",
         "drupal/field_group": "^3.0",
+        "drupal/fontawesome": "2.x-dev#0a02cad1",
         "drupal/geolocation": "^3.1",
         "drupal/office_hours": "^1.2",
         "drupal/paragraphs": "^1.11",
+        "localgovdrupal/localgov_core": "dev-master",
         "localgovdrupal/localgov_topics": "dev-master"
     },
     "extra": {
