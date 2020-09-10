@@ -53,6 +53,8 @@ jobs:
         run: |
           composer --working-dir=/dev/shm/html require brianium/paratest:^4.0.0
           sed --in-place '30 s#./bin/phpunit --testdox#./bin/paratest -p4 --verbose=1#' run-tests.sh
+          sed --in-place '15 s#http://localgov.lndo.site#http://drupal#' /dev/shm/html/phpunit.xml.dist
+          sed --in-place '17 s#mysql://database:database@database/database#sqlite://sites/default/files/.ht.sqlite#' /dev/shm/html/phpunit.xml.dist
 
       - name: Run tests
         run: ./run-tests.sh
