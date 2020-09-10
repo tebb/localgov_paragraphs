@@ -45,8 +45,8 @@ jobs:
 
       - name: Install the php-sqlite3 package
         run: |
-          docker-compose exec drupal apt update
-          docker-compose exec drupal apt --yes install php-sqlite3
+          docker-compose exec -T drupal apt update
+          docker-compose exec -T drupal apt --yes install php-sqlite3
           docker-compose restart drupal
 
       - name: Run tests
