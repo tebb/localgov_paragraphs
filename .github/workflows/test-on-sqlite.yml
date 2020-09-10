@@ -38,7 +38,7 @@ jobs:
           sed --in-place '13 s#mysql://database:database@database/database#sqlite://sites/default/files/.ht.sqlite#' docker-compose.yml # Use Sqlite instead of MySQL as database provider.
           sed --in-place '19 s#- ./html:#- /dev/shm/html:#' docker-compose.yml # Keep Drupal in /dev/shm/html instead of ./html.
           sed --in-place '20,+12 d' docker-compose.yml # Remove reference to MySQL container.
-          sed --in-place '1,$ d' /dev/shm/html/web/sites/default/settings.lando.php
+          sed --in-place '1,$ d' /dev/shm/html/web/sites/default/settings.lando.php # Empty it.
 
       - name: Start Docker environment
         run: docker-compose up -d
@@ -48,6 +48,11 @@ jobs:
           docker-compose exec -T drupal apt update
           docker-compose exec -T drupal apt --yes install php-sqlite3
           docker-compose restart drupal
+
+      - name: Setup Paratest to run tests in parallel
+        run: |
+          composer --working-dir=/dev/shm/html require brianium/paratest:^4.0.0
+          sed --in-place '30 s#./bin/phpunit --testdox#./bin/paratest -p4 --verbose=1#' run-tests.sh
 
       - name: Run tests
         run: ./run-tests.sh
