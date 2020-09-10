@@ -1,0 +1,53 @@
+name: Test LocalGov Drupal Paragraphs using Sqlite instead of MySQL
+
+on:
+  push:
+    branches: [ test/sqlite-as-test-db ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone drupal_container
+        uses: actions/checkout@v2
+        with:
+          repository: localgovdrupal/drupal-container
+          ref: master
+
+      - name: Create LocalGovDrupal project
+        run: composer create-project --stability dev localgovdrupal/localgov-project /dev/shm/html
+
+      - name: Setup package source for the test target
+        run: composer --working-dir=/dev/shm/html config repositories.1 vcs git@github.com:${{ github.repository }}.git
+
+      - name: Extract Git branch name outside of a pull request
+        if: github.event_name != 'pull_request'
+        run: echo "::set-env name=GIT_BRANCH::${GITHUB_REF#refs/heads/}"
+
+      - name: Extract Git branch name from a pull request
+        if: github.event_name == 'pull_request'
+        run: echo "::set-env name=GIT_BRANCH::${GITHUB_HEAD_REF}"
+
+      - name: Grab test target
+        run: composer --working-dir=/dev/shm/html require ${{ github.repository }}:"dev-${GIT_BRANCH} as dev-master"
+
+      - name: Try Sqlite for the Drupal database
+        run: |
+          sed --in-place '13 s#mysql://database:database@database/database#sqlite://sites/default/files/.ht.sqlite#' docker-compose.yml # Use Sqlite instead of MySQL as database provider.
+          sed --in-place '19 s#- ./html:#- /dev/shm/html:#' docker-compose.yml # Keep Drupal in /dev/shm/html instead of ./html.
+          sed --in-place '20,+12 d' docker-compose.yml # Remove reference to MySQL container.
+          rm /dev/shm/html/web/sites/default/settings.lando.php
+
+      - name: Start Docker environment
+        run: docker-compose up -d
+
+      - name: Install the php-sqlite3 package
+        run: |
+          docker-compose exec drupal bash -c 'apt update; apt --yes install php-sqlite3'
+          docker-compose restart drupal
+
+      - name: Run tests
+        run: ./run-tests.sh
+        shell: bash
