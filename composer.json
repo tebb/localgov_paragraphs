@@ -17,8 +17,8 @@
         "drupal/geolocation": "^3.1",
         "drupal/office_hours": "^1.2",
         "drupal/paragraphs": "^1.11",
-        "localgovdrupal/localgov_core": "dev-master",
-        "localgovdrupal/localgov_topics": "dev-master"
+        "localgovdrupal/localgov_core": "1.0.0-alpha1",
+        "localgovdrupal/localgov_topics": "1.0.0-alpha1"
     },
     "extra": {
         "enable-patching": true,
