@@ -2,12 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.localgov_contact.localgov_contact_address
     - field.field.paragraph.localgov_contact.localgov_contact_email
     - field.field.paragraph.localgov_contact.localgov_contact_facebook
     - field.field.paragraph.localgov_contact.localgov_contact_heading
     - field.field.paragraph.localgov_contact.localgov_contact_instagram
-    - field.field.paragraph.localgov_contact.localgov_contact_location
     - field.field.paragraph.localgov_contact.localgov_contact_minicom
     - field.field.paragraph.localgov_contact.localgov_contact_mobile
     - field.field.paragraph.localgov_contact.localgov_contact_office_hours
@@ -18,10 +16,9 @@ dependencies:
     - field.field.paragraph.localgov_contact.localgov_contact_subheading
     - field.field.paragraph.localgov_contact.localgov_contact_twitter
     - field.field.paragraph.localgov_contact.localgov_contact_url
+    - field.field.paragraph.localgov_contact.localgov_location
     - paragraphs.paragraphs_type.localgov_contact
   module:
-    - address
-    - geolocation
     - link
     - office_hours
     - telephone
@@ -30,13 +27,6 @@ targetEntityType: paragraph
 bundle: localgov_contact
 mode: default
 content:
-  localgov_contact_address:
-    weight: 6
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
   localgov_contact_email:
     weight: 9
     label: inline
@@ -75,40 +65,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  localgov_contact_location:
-    weight: 15
-    label: hidden
-    settings:
-      set_marker: true
-      title: ''
-      info_text: {  }
-      use_overridden_map_settings: false
-      common_map: false
-      map_provider_id: google_maps
-      map_provider_settings:
-        height: 400px
-        width: 100%
-        type: ROADMAP
-        zoom: 13
-        maxZoom: 18
-        minZoom: 0
-        mapTypeControl: 1
-        streetViewControl: 1
-        zoomControl: 1
-        scrollwheel: 1
-        gestureHandling: auto
-        draggable: 1
-        style: ''
-        info_auto_display: 1
-        marker_icon_path: ''
-        disableAutoPan: 1
-        rotateControl: false
-        fullscreenControl: 0
-        preferScrollingToZooming: 0
-        disableDoubleClickZoom: 0
-    third_party_settings: {  }
-    type: geolocation_map
     region: content
   localgov_contact_minicom:
     weight: 5
@@ -224,6 +180,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  localgov_location:
+    weight: 16
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden:
   search_api_excerpt: true
