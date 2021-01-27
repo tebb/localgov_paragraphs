@@ -13,3 +13,4 @@ Contains the following paragraph types:
 * Text (pagebuilder_text)
 
 ![Test LocalGov Drupal Paragraphs](https://github.com/localgovdrupal/localgov_paragraphs/workflows/Test%20LocalGov%20Drupal%20Paragraphs/badge.svg)
+
