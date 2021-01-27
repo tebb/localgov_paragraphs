@@ -1,3 +1,6 @@
+Bump: Added to trigger workflow testing
+Surely there's a better way?
+
 # LocalGovDrupal Paragraphs
 
 Core paragraph components for the LocalGovDrupal distribution.
